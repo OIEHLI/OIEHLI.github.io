@@ -1,8 +1,35 @@
-@import url(https://fonts.googleapis.com/css?family=Give+You+Glory|The+Girl+Next+Door|Gloria+Hallelujah|Indie+Flower);
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
 body {
   background: #eee;
 }
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+
+}
+.post-it {
+  display: table;
+  margin: 5em auto 0;
+  width: 250px;
+}
+/* @media (min-width: 550px) {
+  .gallery {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+@media (min-width: 1260px) {
+  .gallery {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+  }
+} */
+
 .sticky {
   -webkit-box-shadow: #DDD 0px 1px 2px;
   position: relative;
@@ -16,14 +43,10 @@ body {
   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
   box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
   width: 250px;
-  font-family: 'Indie Flower', cursive;
-  font-family: 'Give You Glory', cursive;
-  font-family: 'The Girl Next Door', cursive;
-  font-family: 'Gloria Hallelujah', cursive;
-}
-.post-it {
-  display: table;
-  margin: 5em auto 0;
+  height: 200px;
+  font-family: 'Gaegu', cursive;
+  font-size: 20px;
+  word-break: keep-all;
 }
 .taped {
   display: table-cell;
@@ -31,41 +54,6 @@ body {
   vertical-align: middle;
 }
 .sticky.taped:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 110px;
-  height: 30px;
-  top: -21px;
-  left: 30%;
-  border: 1px solid #fff;
-  background: rgba(254, 254, 254, .6);
-  -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
-  box-shadow: 0px 0 3px rgba(0,0,0,0.1);
-}
-
-.note {
--webkit-box-shadow: #DDD 0px 1px 2px;
-  position: relative;
-  background-color: #F4F39E;
-  border-color: #DEE184;
-  text-align: center;
-  margin: 1.5em auto;
-  padding: 1.5em 1em;
-  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  transform: rotate(2deg);
-  width: 250px;
-  font-family: 'The Girl Next Door', cursive; /*originally with brain flower font*/
-  font-size: 1em;
-}
-.note:after {
   display: block;
   content: "";
   position: absolute;
