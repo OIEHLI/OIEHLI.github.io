@@ -313,3 +313,6 @@ a {
   font-size: 0.75em;
   font-weight: 600;
 }
+
+  .wrap{width:100%; text-align:center; margin:0px auto;}
+  .wrap img{width:100%; height:auto}
